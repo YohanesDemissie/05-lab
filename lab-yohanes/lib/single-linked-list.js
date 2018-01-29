@@ -1,6 +1,6 @@
 'use strict';
 
-const Node = require('./node.js') 
+const Node = require('./node.js')
 
 class SLL {
   constructor() {
@@ -12,7 +12,7 @@ class SLL {
     let node = new Node(val);
     node.next = this.head;
     this.head = node;
-    this.listLength++;
+   // this.listLength++;
     return this;
   }
 
@@ -21,17 +21,19 @@ class SLL {
     let node = new Node(val);
     if (!this.head) {
       this.head = node;
-      this.listLength++;
+     // this.listLength++;
       return this;
     }
 
     for (var itr = this.head; itr.next; itr = itr.next);
     itr.next = node;
-    this.listLength++;
+  //  this.listLength++;
     return this;
   }
 
   remove(rem) {
+    let node = new Node(rem);
+
     if (!rem) return null;
     if (!rem === 1) {
       this.head = this.head.next;
@@ -61,17 +63,6 @@ class SLL {
     }
     return this;
   }
-
-  finodeNthNode(n) {
-    if (!n || typeof n != 'number') return null;
-    if (n > this.listLength || n < 1) return null;
-    let curNode = this.head;
-    for (let i = 1; i < n; i++) {
-      curNode = curNode.next;
-    }
-    return curNode;
-  }
-
 } //this one closes class SLL
 
 let node = {

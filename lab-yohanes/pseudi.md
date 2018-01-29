@@ -20,3 +20,6 @@ so running the function in the expect() and throwing in a value, you can not onl
 
 #EXPECT VS RECIEVED
 the recieved clarifies exactly how the function is running and expected is how I  THOUGHT it was runnung. works like auto corrector in a sense
+
+#IMPORTANT NOTE
+Becasue the tests save for every new test case, if you wanna figure out each function in depth, comment out all other test cases and just have the one test case you want to look into. 
