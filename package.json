@@ -1,0 +1,31 @@
+{
+  "name": "linked-list-test",
+  "version": "0.0.0",
+  "description": "testing 1 2 3",
+  "main": "single-linked-list.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YohanesDemissie/05-lab.git"
+  },
+  "keywords": [
+    "you",
+    "got",
+    "this!"
+  ],
+  "author": "Yohanes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YohanesDemissie/05-lab/issues"
+  },
+  "homepage": "https://github.com/YohanesDemissie/05-lab#readme",
+  "dependencies": {
+    "jest": "^22.1.4",
+    "test": "^0.6.0"
+  }
+}
